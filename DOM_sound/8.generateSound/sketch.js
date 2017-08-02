@@ -8,12 +8,11 @@ function setup() {
     squ = new p5.SqrOsc();
     tri = new p5.TriOsc();
     saw = new p5.SawOsc();
-    squ.start();
+    sine.start();
 }
 
 function draw() {
     background(0);
     var hertz = map(mouseX, 0, width, 31., 440.);
-    squ.freq(hertz);
-    stroke(255);
+    sine.freq(hertz);
 }
